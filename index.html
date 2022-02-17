@@ -4,8 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/099efb5fef.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Rock Paper Scissors.</title>
   </head>
-  <body></body>
+  <body>
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="game">
+      <div class="result">
+        <div class="player">
+          <h1 class="player-title">Player</h1>
+          <h1 class="scores" id="player-score">0</h1>
+        </div>
+        <div class="display-plays">
+        <div class="play" id="human-play"></div>
+        <span>VS</span>
+        <div class="play" id="comp-play"></div>
+</div>
+        <div class="player">
+          <h1 class="player-title">Computer</h1>
+          <h1 class="scores" id="comp-score">0</h1>
+        </div>
+      </div>
+    </div>
+    <div class="res-text">
+    </div>
+
+    <div class="card human">
+      <div class="options">
+        <div class="rock" id="rock">
+          <i class="fa-solid fa-hand-fist"></i>
+        </div>
+        <div class="paper" id="paper"><i class="fa-solid fa-hand"></i></div>
+        <div class="scissors" id="scissors">
+          <i class="fa-solid fa-hand-scissors"></i>
+        </div>
+      </div>
+    </div>
+    <footer>
+    <div class="footer"><p>Angel Velasco 2022</p></div>
+    
+  </body>
+
   <script src="script.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>

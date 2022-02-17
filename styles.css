@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&family=Permanent+Marker&family=Varela+Round&display=swap");
+body {
+  background-color: #21325e;
+  color: #f0f0f0;
+  font-family: "Permanent Marker";
+  margin: 0;
+}
+.title {
+  text-align: center;
+  padding-block: 3%;
+  font-size: 3rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10%;
+}
+.options > div {
+  font-size: 9rem;
+  color: color;
+  transition: 350ms;
+  padding: 10px;
+  cursor: pointer;
+}
+.options > div:hover {
+  color: white;
+  transform: scale(1.25);
+  transition: 350ms;
+}
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+.play {
+  font-size: 9em;
+}
+span {
+  font-size: 9em;
+}
+.player-title {
+  font-size: 4em;
+}
+.scores {
+  text-align: center;
+  font-size: 5em;
+}
+.selected {
+  animation: animate 0.5s ease-in forwards;
+}
+.play {
+  color: #f1d00a;
+}
+.card {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 0;
+  padding-bottom: 5%;
+}
+.options {
+  margin-inline: 20%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding-inline: 10%;
+  z-index: -1;
+}
+
+.footer {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-family: "Varela Round";
+}
+.display-plays {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+@keyframes animate {
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .options > div {
+    font-size: 6rem;
+    color: color;
+    transition: 350ms;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .player {
+    font-size: 0.8rem;
+  }
+  .play {
+    font-size: 8rem;
+  }
+  .display-plays > span {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .options > div {
+    font-size: 7rem;
+    color: color;
+    transition: 350ms;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .player {
+    font-size: 0.6rem;
+  }
+  .play {
+    font-size: 6.5rem;
+  }
+  .display-plays > span {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .result {
+    flex-direction: column;
+  }
+  .display-plays {
+    justify-content: space-around;
+  }
+  .player {
+    display: flex;
+    justify-content: space-around;
+  }
+  .options {
+    padding-inline: 0;
+    margin-inline: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .options {
+    margin-inline: 0;
+    justify-content: space-around;
+  }
+  .options > div {
+    font-size: 5rem;
+    padding-bottom: 80px;
+  }
+
+  .play {
+    font-size: 5rem;
+  }
+  .display-plays span {
+    font-size: 4.5rem;
+  }
+}
