@@ -162,3 +162,20 @@ span {
     font-size: 4.5rem;
   }
 }
+@media screen and (max-height: 800px) {
+  .options > div {
+    padding-bottom: 20px;
+  }
+  .card {
+    padding-bottom: 0;
+  }
+  .footer {
+    display: none;
+  }
+  .result h1 {
+    margin-block: 10px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
